@@ -1,4 +1,11 @@
+#Turn on C++
 language: cpp
+# Compiler Selection
 comipler:
 	- clang
 	- gcc
+#Build Steps
+script:
+	-mkdir build
+	-cd build
+	-cmake .. && make
