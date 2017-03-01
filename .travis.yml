@@ -47,3 +47,6 @@ script:
   - mkdir build
   - cd build
   - cmake -DCMAKE_CXX_COMPILER=$COMPILER .. && make
+
+after_success:
+  - ./bin/hello
